@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.animation/animation-core/1.0.1/c230b84f27ee79adf5e8d6115cdf6c3f89f5b7fd/animation-core-1.0.1-sources.jar!/androidx/compose/animation/core/AnimateAsState.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.material/material-icons-core/1.0.1/f6ebb4e631e995de2b75617bed6175b0fe306294/material-icons-core-1.0.1-sources.jar!/androidx/compose/material/icons/Icons.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.material/material-icons-core/1.0.1/f6ebb4e631e995de2b75617bed6175b0fe306294/material-icons-core-1.0.1-sources.jar!/androidx/compose/material/icons/filled/Delete.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.material/material-icons-core/1.0.1/f6ebb4e631e995de2b75617bed6175b0fe306294/material-icons-core-1.0.1-sources.jar!/androidx/compose/material/icons/outlined/List.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.material/material/1.0.1/b1fd7de2045e8ac5bcc5c0e05aaf9c8748c482e5/material-1.0.1-sources.jar!/androidx/compose/material/Typography.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.runtime/runtime/1.0.1/c431c33253972911af37ad57b36ada1dd3c02c11/runtime-1.0.1-sources.jar!/androidx/compose/runtime/CompositionLocal.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.ui/ui/1.0.1/75ac3f2a6c2fd17f5574a8bdbc5d1427c638886f/ui-1.0.1-sources.jar!/androidx/compose/ui/platform/AndroidCompositionLocals.android.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.ui/ui/1.0.1/75ac3f2a6c2fd17f5574a8bdbc5d1427c638886f/ui-1.0.1-sources.jar!/androidx/compose/ui/res/StringResources.android.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.kts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/eungpang/composebasic/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/eungpang/composebasic/ui/theme/Color.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/eungpang/composebasic/ui/theme/Theme.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/eungpang/composebasic/ui/theme/Type.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../android-testing/app/src/main/java/com/example/android/architecture/blueprints/todoapp/statistics/StatisticsUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
