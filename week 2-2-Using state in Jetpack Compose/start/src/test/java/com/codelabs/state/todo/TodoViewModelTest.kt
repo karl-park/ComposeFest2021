@@ -16,6 +16,57 @@
 
 package com.codelabs.state.todo
 
+import androidx.compose.runtime.snapshots.Snapshot
+import com.codelabs.state.util.generateRandomTodoItem
+import com.google.common.truth.Truth.assertThat
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.test.TestCoroutineDispatcher
+import kotlinx.coroutines.test.TestCoroutineScope
+import kotlinx.coroutines.test.resetMain
+import kotlinx.coroutines.test.setMain
+import org.junit.Rule
+import org.junit.Test
+import org.junit.rules.TestWatcher
+import org.junit.runner.Description
+
 class TodoViewModelTest {
-    // TODO: Write tests
+    @ExperimentalCoroutinesApi
+    @get:Rule
+    val coroutineRule = MainCoroutineRule()
+
+    @Test
+    fun whenRemovingItem_updatesList() {
+        // before
+        val viewModel = TodoViewModel()
+        val item1 = generateRandomTodoItem()
+        val item2 = generateRandomTodoItem()
+        viewModel.addItem(item1)
+        viewModel.addItem(item2)
+
+        // during
+        viewModel.removeItem(item1)
+
+        // Snapshot.sendApplyNotifications()
+
+        // after
+        assertThat(viewModel.todoItems).isEqualTo(listOf(item2))
+    }
+}
+
+
+@ExperimentalCoroutinesApi
+class MainCoroutineRule(
+    private val dispatcher: TestCoroutineDispatcher = TestCoroutineDispatcher()
+) : TestWatcher(), TestCoroutineScope by TestCoroutineScope(dispatcher) {
+    override fun starting(description: Description?) {
+        super.starting(description)
+        Dispatchers.setMain(dispatcher)
+    }
+
+    override fun finished(description: Description?) {
+        super.finished(description)
+        cleanupTestCoroutines()
+        Dispatchers.resetMain()
+    }
 }

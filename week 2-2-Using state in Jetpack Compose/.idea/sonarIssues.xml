@@ -3,6 +3,16 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$PROJECT_DIR$/finished/src/main/java/com/codelabs/state/todo/TodoScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/start/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/start/src/main/java/com/codelabs/state/examples/HelloCodelabActivity.kt">
           <value>
             <set />
@@ -14,6 +24,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/start/src/main/java/com/codelabs/state/todo/TodoScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/start/src/main/java/com/codelabs/state/todo/TodoViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/start/src/test/java/com/codelabs/state/todo/TodoViewModelTest.kt">
           <value>
             <set />
           </value>

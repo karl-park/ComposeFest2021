@@ -22,32 +22,41 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.livedata.observeAsState
 import com.codelabs.state.ui.StateCodelabTheme
 
 class TodoActivity : AppCompatActivity() {
 
-    val todoViewModel by viewModels<TodoViewModel>()
+    val viewModel by viewModels<TodoViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             StateCodelabTheme {
                 Surface {
-                    TodoActivityScreen(todoViewModel)
+                    TodoActivityScreen(viewModel)
                 }
             }
+        }
+    }
+
+    override fun onBackPressed() {
+        if (viewModel.currentEditItem != null) {
+            viewModel.onEditDone()
+        } else {
+            super.onBackPressed()
         }
     }
 }
 
 @Composable
 fun TodoActivityScreen(viewModel: TodoViewModel) {
-    val items: List<TodoItem> by viewModel.todoItems.observeAsState(emptyList())
     TodoScreen(
-        items = items,
+        items = viewModel.todoItems,
+        currentlyEditing = viewModel.currentEditItem,
         onAddItem = viewModel::addItem,
-        onRemoveItem = viewModel::removeItem
+        onRemoveItem = viewModel::removeItem,
+        onStartEdit = viewModel::onEditItemSelected,
+        onEditItemChange = viewModel::onEditItemChange,
+        onEditDone = viewModel::onEditDone
     )
 }
