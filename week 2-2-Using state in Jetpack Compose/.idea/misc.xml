@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../../layout/compose-model-1637049090710.xml" value="0.4238636363636364" />
+        <entry key="../../../../../../../layout/compose-model-1637049100669.xml" value="0.335" />
+        <entry key="../../../../../../../layout/compose-model-1637049100690.xml" value="0.13860610806577917" />
+        <entry key="../../../../../../../layout/compose-model-1637052322988.xml" value="0.26182432432432434" />
+        <entry key="../../../../../../../layout/compose-model-1637053699332.xml" value="0.24236491777603758" />
+        <entry key="../../../../../../../layout/compose-model-1637054123378.xml" value="0.23296789350039154" />
+        <entry key="../../../../../../../layout/compose-model-1637056600248.xml" value="0.17272727272727273" />
+        <entry key="../../../../../../../layout/compose-model-1637058804264.xml" value="0.3534090909090909" />
+        <entry key="start/src/main/res/layout/activity_hello_codelab.xml" value="0.14463019250253292" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
