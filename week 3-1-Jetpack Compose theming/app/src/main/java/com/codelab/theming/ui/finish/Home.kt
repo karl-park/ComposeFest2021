@@ -179,7 +179,7 @@ private fun PostMetadata(
         append(stringResource(R.string.read_time, post.metadata.readTimeMinutes))
         append(divider)
         val tagStyle = MaterialTheme.typography.overline.toSpanStyle().copy(
-            background = MaterialTheme.colors.primary.copy(alpha = 0.1f)
+            background = MaterialTheme.colors.primary.copy(alpha = 0.3f)
         )
         post.tags.forEachIndexed { index, tag ->
             if (index != 0) {

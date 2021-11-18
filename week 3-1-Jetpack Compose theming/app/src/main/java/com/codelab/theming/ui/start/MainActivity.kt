@@ -19,13 +19,16 @@ package com.codelab.theming.ui.start
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material.Surface
+import androidx.compose.foundation.isSystemInDarkTheme
+import com.codelab.theming.ui.start.theme.JetnewsTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
-            Surface {
+            val isDarkTheme = isSystemInDarkTheme()
+            JetnewsTheme(isDarkTheme) {
                 Home()
             }
         }
