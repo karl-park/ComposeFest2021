@@ -16,6 +16,7 @@
 
 package com.example.compose.rally.ui.components
 
+import android.util.Log
 import androidx.compose.animation.core.CubicBezierEasing
 import androidx.compose.animation.core.LinearOutSlowInEasing
 import androidx.compose.animation.core.MutableTransitionState
@@ -23,6 +24,7 @@ import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.core.updateTransition
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.border
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
@@ -49,8 +51,8 @@ fun AnimatedCircle(
         MutableTransitionState(AnimatedCircleProgress.START)
             .apply { targetState = AnimatedCircleProgress.END }
     }
-    val stroke = with(LocalDensity.current) { Stroke(5.dp.toPx()) }
-    val transition = updateTransition(currentState)
+    val stroke = with(LocalDensity.current) { Stroke(15.dp.toPx()) }
+    val transition = updateTransition(currentState, label = "")
     val angleOffset by transition.animateFloat(
         transitionSpec = {
             tween(
@@ -58,7 +60,7 @@ fun AnimatedCircle(
                 durationMillis = 900,
                 easing = LinearOutSlowInEasing
             )
-        }
+        }, label = ""
     ) { progress ->
         if (progress == AnimatedCircleProgress.START) {
             0f
@@ -73,7 +75,7 @@ fun AnimatedCircle(
                 durationMillis = 900,
                 easing = CubicBezierEasing(0f, 0.75f, 0.35f, 0.85f)
             )
-        }
+        }, label = ""
     ) { progress ->
         if (progress == AnimatedCircleProgress.START) {
             0f
@@ -82,7 +84,10 @@ fun AnimatedCircle(
         }
     }
 
-    Canvas(modifier) {
+    Canvas(
+        modifier
+            .border(4.dp, Color.Green)
+    ) {
         val innerRadius = (size.minDimension - stroke.width) / 2
         val halfSize = size / 2.0f
         val topLeft = Offset(
