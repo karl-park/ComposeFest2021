@@ -25,7 +25,9 @@ import androidx.compose.samples.crane.R
 import androidx.compose.samples.crane.base.SimpleUserInput
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import kotlinx.coroutines.InternalCoroutinesApi
 
+@OptIn(InternalCoroutinesApi::class)
 @Composable
 fun FlySearchContent(
     onPeopleChanged: (Int) -> Unit,
